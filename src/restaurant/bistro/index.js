@@ -157,16 +157,16 @@ function handleStarClicked(event){
     const rating = event.currentTarget.getAttribute('data-value')
 
     if (rating < 4){
-        reviewModal.updateModal("We are sorry, you are disappointed", 
-                            "Please let us know what we can improve.")
+        reviewModal.updateModal("Chúng tôi rất tiếc, bạn đã thất vọng", 
+                            "Vui lòng cho chúng tôi biết những gì chúng tôi có thể cải thiện.")
         reviewModal.showModalInput()
         reviewModal.updateButton("Submit")
     }else{
-        reviewModal.updateModal("Thank you!", 
-                            `We are pleased to hear you like us. 
-                            Could you please rate us on Google maps?`)
+        reviewModal.updateModal("Cảm ơn!", 
+                            `Chúng tôi rất vui khi nghe bạn thích chúng tôi.
+Bạn vui lòng đánh giá chúng tôi trên Google Maps nhé?`)
         reviewModal.hideModalInput()
-        reviewModal.updateButton("Open maps", "https://maps.app.goo.gl/")
+        reviewModal.updateButton("Open maps", "https://maps.app.goo.gl/Uh3hFz9BJiuJbAbu6")
     }
 
     reviewModal.show()
